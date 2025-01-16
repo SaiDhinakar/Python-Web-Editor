@@ -2,7 +2,7 @@
 
 A simple, elegant web-based Python code editor that allows users to write and execute Python code directly in the browser. Built with Flask.
 
-![Python Editor Screenshot](image.png)
+![Python Editor Screenshot](image.png){width="100%"}
 
 ## Features
 
