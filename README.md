@@ -1,4 +1,4 @@
-# Python Online Editor
+# Python Web Editor
 
 A simple, elegant web-based Python code editor that allows users to write and execute Python code directly in the browser. Built with Flask.
 
