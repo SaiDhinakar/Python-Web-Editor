@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <header>
+        <h2>Python Editor</h2>
+    </header>
+
+    <hr>
+
+    <main>
+        <div class="container">
+            <div class="text-area">
+                <textarea id="editor" rows="15" cols="75" placeholder="Enter your code here..."></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit" id="btn" onclick="show_result()">
+                    Run
+                </button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="output">
+                <h3>Result:</h3>
+            </div>
+            <div class="text-area">
+                <textarea id="output" rows="15" cols="75" readonly></textarea>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Python Editor</h2>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="text-area">
+                <textarea 
+                id="editor" 
+                rows="15" 
+                cols="50" 
+                spellcheck="false"
+                autocapitalize="false"
+                autocorrect="false"
+                placeholder="Enter your Python code here...&#10;&#10;Example:&#10;x = 10&#10;y = 20&#10;print(f'Sum: {x + y}')"></textarea>
+            </div>
+            <div class="btn">
+                <button type="submit" id="btn" onclick="show_result()">
+                    Run Code
+                    <span class="loading" id="loading"></span>
+                </button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="output">
+                <h3>Output:</h3>
+            </div>
+            <div class="text-area">
+                <textarea id="output" rows="15" cols="75" readonly placeholder="Your code output will appear here..."></textarea>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>
